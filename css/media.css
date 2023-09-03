@@ -1,19 +1,261 @@
 /*----------MOBILE---------*/
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 428px) {
   .container {
     max-width: 426px;
+  }
+  .contacts-links,
+  .contacts {
+    list-style-type: none;
+  }
+  .advantages-item {
+    width: 100%;
   }
 }
 
 /*------------TABLET------------*/
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
   }
-  .menu-button {
+  .page-header {
+    padding: 16px;
+  }
+
+  .menu-button,
+  .menu-container {
     display: none;
   }
+  .header-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .menu {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 120px;
+  }
+  .contacts-links,
+  .contacts {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contacts {
+    list-style-type: none;
+  }
+  .contact-item {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+  }
+  .section-index {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-1x-tab.jpg);
+    width: 100%;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-index {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-2x-tab.jpg);
+    }
+  }
+  .section-index > h1 {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+  }
+  .advantages-list {
+    padding: 0;
+    gap: 72px 24px;
+  }
+  .advantage-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-list > li > h2 {
+    text-align: left;
+  }
+  .team-list {
+    gap: 64px 24px;
+    justify-content: center;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .footer-wrapper {
+    justify-content: center;
+    gap: 72px 24px;
+  }
+  .container-footer-logo {
+    text-align: left;
+    margin-left: 108px;
+  }
+  .footer-social {
+    margin-right: auto;
+    margin-top: 96px;
+  }
+  .footer-social-title {
+    text-align: left;
+  }
+  .subscribe-footer {
+    text-align: left;
+    margin-right: auto;
+    margin-left: 108px;
+  }
+  .subscribe-form {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .modal {
+    width: 408px;
+    padding-top: 72px;
+    padding-right: 25px;
+    padding-bottom: 24px;
+    padding-left: 23px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/*------------DESKTOP----------*/
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .contacts-links,
+  .contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contacts {
+  }
+  .contact-item {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+  .menu {
+    padding-left: 76px;
+  }
+  .nav-active::after {
+    bottom: -17px;
+  }
+  .section-index {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-1x-des.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-index {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-2x-des.jpg);
+    }
+  }
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .advantage-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .advantages-list > li > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .advantages-list > li > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .advantages-svg {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--cloud);
+  }
+  .section-one-icon {
+    display: flex;
+  }
+  .description {
+    display: block;
+  }
+  .customers-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .customers-item {
+    width: ((100% - 120px) / 6);
+  }
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .footer-social {
+    margin-left: 120px;
+    margin-top: 100px;
+  }
+  .subscribe-footer {
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .modal {
+    width: 408px;
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-check-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
   }
 }
