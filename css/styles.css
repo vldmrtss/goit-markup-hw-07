@@ -26,8 +26,16 @@ body {
   list-style-type: none;
 }
 
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
-  max-width: 1158px;
+  width: 100%;
+  /* max-width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -533,7 +541,6 @@ body {
   list-style-type: none;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .customers-item {
   /* width: calc((100% - 120px) / 6); */

@@ -1,7 +1,9 @@
 /*----------MOBILE---------*/
 @media screen and (max-width: 428px) {
   .container {
-    max-width: 426px;
+  }
+  .section-index {
+    max-width: 428px;
   }
   .contacts-links,
   .contacts {
@@ -16,6 +18,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
+    /* max-width: 766px; */
   }
   .page-header {
     padding: 16px;
@@ -57,6 +60,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-1x-tab.jpg);
+    max-width: 768px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -110,7 +114,7 @@
     margin-left: 108px;
   }
   .footer-social {
-    margin-right: auto;
+    margin-right: 164px;
     margin-top: 96px;
   }
   .footer-social-title {
@@ -142,6 +146,7 @@
 
 @media screen and (min-width: 1158px) {
   .container {
+    /* max-width: 1158px; */
   }
   .contacts-links,
   .contacts {
@@ -169,6 +174,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-1x-des.jpg);
+    max-width: 1440px;
   }
 
   @media (min-device-pixel-ratio: 2),
