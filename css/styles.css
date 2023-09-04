@@ -420,6 +420,9 @@ ol {
   gap: 72px;
   margin: auto;
 }
+.advantage-item {
+  width: 100%;
+}
 
 .section-two-wrapper {
   padding-top: 0;
@@ -699,8 +702,6 @@ img {
 /* --------Footer-------- */
 
 .footer-wrapper {
-  /* display: flex;
-  align-items: baseline; */
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
