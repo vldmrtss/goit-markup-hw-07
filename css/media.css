@@ -13,8 +13,10 @@
   .advantages-item {
     width: 100%;
   }
-  .footer-wrapper {
-    justify-content: center;
+  @media screen and (max-width: 768px) {
+    .footer-wrapper {
+      justify-content: center;
+    }
   }
   .modal {
     width: 392px;
