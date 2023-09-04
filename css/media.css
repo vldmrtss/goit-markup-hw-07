@@ -13,6 +13,9 @@
   .advantages-item {
     width: 100%;
   }
+  .footer-wrapper {
+    justify-content: center;
+  }
   .modal {
     width: 392px;
   }
@@ -110,8 +113,8 @@
     width: calc((100% - 48px) / 3);
   }
   .footer-wrapper {
-    justify-content: center;
     gap: 72px 24px;
+    max-width: 550px;
   }
   .container-footer-logo {
     text-align: left;
@@ -125,7 +128,6 @@
   .subscribe-footer {
     text-align: left;
     margin-right: auto;
-    margin-left: 108px;
   }
   .subscribe-form {
     flex-wrap: nowrap;

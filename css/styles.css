@@ -705,7 +705,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  justify-content: center;
   padding-bottom: 96px;
 }
 .container-footer-logo {
